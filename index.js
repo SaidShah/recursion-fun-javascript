@@ -33,3 +33,15 @@ function reverseString(givenString){
 
 
 console.log(reverseString("Florida"));
+
+// find the greatest common divider
+function gcd(firstNum, secondNum){
+
+  if(!secondNum){
+    return firstNum
+  }
+
+  return gcd(secondNum, firstNum%secondNum)
+}
+
+console.log(gcd(4000,400))
