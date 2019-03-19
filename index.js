@@ -21,3 +21,15 @@ function fib(givenNum){
 }
 
 console.log(fib(8))
+
+// reversing a string with recursion
+function reverseString(givenString){
+  if(givenString.length === 0){
+    return ''
+  }else{
+    return givenString[givenString.length-1]+reverseString(givenString.substring(0,givenString.length-1))
+  }
+}
+
+
+console.log(reverseString("Florida"));
