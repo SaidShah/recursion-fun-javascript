@@ -44,4 +44,4 @@ function gcd(firstNum, secondNum){
   return gcd(secondNum, firstNum%secondNum)
 }
 
-console.log(gcd(4000,400))
+console.log(gcd(4000,980))
